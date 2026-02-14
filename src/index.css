@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		font-family: 'Darker Grotesque', sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Archivo Black', sans-serif;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+::selection {
+	background-color: #EC4899;
+	color: white;
+}
+
+*:focus-visible {
+	outline: 2px solid #EC4899;
+	outline-offset: 2px;
+}
