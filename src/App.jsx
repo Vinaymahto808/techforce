@@ -100,13 +100,12 @@ const Navigation = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <motion.a
-          href="#"
-          whileHover={{ scale: 1.1, rotate: [0, -5, 5, -5, 0] }}
-          className="cursor-pointer"
+        <motion.div
+          whileHover={{ scale: 1.05, rotate: [0, -5, 5, -5, 0] }}
+          className="text-3xl font-black tracking-tight cursor-pointer bg-gradient-to-r from-[#0D3430] via-[#16A085] to-[#1ABC9C] bg-clip-text text-transparent"
         >
-          <img src="/logo.png" alt="TechForge Logo" className="h-12 w-auto" />
-        </motion.a>
+          TechForge
+        </motion.div>
 
         <div className="hidden md:flex gap-8">
           {menuItems.map((item, i) => (
@@ -1279,14 +1278,6 @@ const Footer = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <motion.a
-            href="#"
-            whileHover={{ scale: 1.1 }}
-            className="inline-block mb-6"
-          >
-            <img src="/logo.png" alt="TechForge" className="h-20 w-auto mx-auto" />
-          </motion.a>
-
           <motion.div
             animate={{ rotate: [0, 10, -10, 0] }}
             transition={{ repeat: Infinity, duration: 5 }}
